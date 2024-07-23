@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design 6T_SRAM -cell 6T_SRAM -type schematic -newwindow
+window move -left 130 -top 130 -width 693 -height 425 -undock -normal 
+window fit -x0 -2865 -y0 1216 -x1 4285 -y1 5274 -units iu
+workspace dockinglayout load -file dockinglayout.xml
+source open.design -relativeto user -encoding utf-8
+source open.design -relativeto design -encoding utf-8
